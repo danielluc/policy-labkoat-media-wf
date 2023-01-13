@@ -1,4 +1,4 @@
-package peoplefinder.GET.api.users.__id
+package labkoatworkflow.GET.api.protected.__id
 
 import input.policy.path
 import input.user.properties.roles as user_roles
@@ -10,16 +10,13 @@ default visible = false
 default enabled = false
 
 allowed {
-	some index
-	data.roles[user_roles[index]].perms[path].allowed
+	true
 }
 
 visible {
-	some index
-	data.roles[user_roles[index]].perms[path].visible
+	true
 }
 
 enabled {
-	some index
-	data.roles[user_roles[index]].perms[path].enabled
+	false
 }

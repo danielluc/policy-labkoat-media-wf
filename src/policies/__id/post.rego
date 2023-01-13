@@ -1,4 +1,4 @@
-package peoplefinder.POST.api.users.__id
+package labkoatworkflow.POST.api.protected.__id
 
 import input.policy.path
 import input.user.properties.roles as user_roles
